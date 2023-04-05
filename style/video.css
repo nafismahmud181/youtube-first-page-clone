@@ -1,0 +1,134 @@
+.thumbnail-row{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.thumbnail{
+    width: 100%;
+
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+
+.profile-picture{
+    width: 40px;
+    border-radius: 20px;
+    
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px; 
+    
+}
+
+
+.video-views, .video-channel{
+    font-size: 12px;
+    color: #606060;
+}
+
+.video-channel{
+    margin-bottom: 4px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width: 750px) and (max-width: 999px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+.video-time{
+    position: absolute;
+    background-color: black;
+    bottom: 8px;
+    right: 8px;
+    color: white;
+    padding: 4px 4px 4px 4px ;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.profile-picture-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.channel-tooltip{
+    background-color: white;
+    border-radius: 6px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    
+    
+}
+
+.profile-picture-container:hover .channel-tooltip{
+    opacity: 1;
+}
+
+
+
+
+
+.tooltip-channel-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+.tooltip-channel-name{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.tooltio-subscriber-count{
+    font-size: 12px;
+    color: rgb(146, 144, 144);
+}
